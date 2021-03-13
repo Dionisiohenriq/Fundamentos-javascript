@@ -1,7 +1,6 @@
 const notas = [7.7, 6.5, 5.2, 8.9, 3.5, 7.1, 9.0]
 
 //sem callback
-
 const notasBaixas1 = []
 for (let i in notas){
     if(notas[i] < 7){
@@ -11,8 +10,8 @@ for (let i in notas){
 
 console.log(notasBaixas1)
 
-//com callback
-const notasBaixas2 = notas.filter(function (nota){return nota >= 7})
+//com callback - filter não altera o array original
+const notasBaixas2 = notas.filter(function (nota){ return nota >= 7}) 
 
 console.log(notasBaixas2)
 

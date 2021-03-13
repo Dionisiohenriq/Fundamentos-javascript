@@ -5,5 +5,5 @@ function imprimir(nome, indice) {
 }
 
 fabricantes.forEach(imprimir)
-
+fabricantes.forEach( fabricante => console.log(fabricante))
 // callback - chamar uma mesma função a cada evento
