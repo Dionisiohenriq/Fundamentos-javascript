@@ -6,7 +6,25 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /* Seletores */
+        /* * */
+        /* p */
+        /* .casa */
+        /* #aprovados */
+        /* p > ul */
+        /* p + ol */
+        /* p ~ ol */
+        /* [feira*=sa] */
+        /* [feira~=sa] */
+        /* span:nth-child(1)  */
+        /* span > :nth-child(odd)  */
+        /* section > :nth-child(odd)  */
+        /* section > :nth-child(odd), ul  */
+        /* section > :nth-child(odd) span */
+        section > span:nth-of-type(2) {
+            color: #ff0;
+            background-color: #f77;
+        }
     </style>
 </head>
 
@@ -29,7 +47,7 @@
             </ol>
             <div id='aninhado' class='tag'>
                 <div class="tag">
-                    <section class='tag'>
+                    <section class='tag nolabel'>
                         <span class='tag'>1</span>
                         <p class='tag'>2</p>
                         <span class='tag'>3</span>
